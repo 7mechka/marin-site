@@ -1,0 +1,16 @@
+.offers {
+    background-image: url(../img/photo_to_main_offer.jpg);
+    color: #fff;
+    height: 768px;
+    &__title {
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 72px;
+        padding-top: 241px;
+    }
+    &__desk {
+        font-size: 24px;
+        line-height: 36px;
+        padding: 55px 0;
+    }
+}

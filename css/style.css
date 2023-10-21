@@ -59,9 +59,33 @@ h1, h2, h3, h4, h5, h6 {
   font-family: Oswald;
 }
 
+.btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #FFF;
+  width: 250px;
+  height: 40px;
+  border-radius: 10px;
+  font-size: 18px;
+  line-height: 24px;
+  background-color: #2D5E5E;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+}
+.btn:hover, .btn:focus {
+  opacity: 0.7;
+}
+.btn:active {
+  opacity: 0.4;
+}
+
 .nav {
   display: flex;
   justify-content: space-between;
+  position: absolute;
+  width: 100%;
 }
 .nav__list {
   list-style: none;
@@ -100,6 +124,23 @@ h1, h2, h3, h4, h5, h6 {
 
 .logo {
   padding-top: 30px;
+}
+
+.offers {
+  background-image: url(../img/photo_to_main_offer.jpg);
+  color: #fff;
+  height: 768px;
+}
+.offers__title {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 72px;
+  padding-top: 241px;
+}
+.offers__desk {
+  font-size: 24px;
+  line-height: 36px;
+  padding: 55px 0;
 }
 
 /*# sourceMappingURL=style.css.map */

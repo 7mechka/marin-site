@@ -13,3 +13,24 @@ body {
 h1, h2, h3, h4, h5, h6 {
     font-family: Oswald;
 }
+.btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #FFF;
+    width: 250px;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 18px;
+    line-height: 24px;
+    background-color: #2D5E5E;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+    &:hover, &:focus {
+        opacity: .7;
+    }
+    &:active {
+        opacity: .4;
+    }
+}

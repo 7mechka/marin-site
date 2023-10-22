@@ -1,0 +1,33 @@
+.service {
+    &__list {
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item {
+        width: 300px;
+        display: inline-flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 60px 0 37px;
+        // margin: 0 90px;
+    }
+    &__img {
+        width: 56px;
+
+    }
+    &__title {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 32px;
+        text-align: center;
+        color: #2D5E5E;
+        padding: 30px 20px;
+    }
+    &__desc {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+        text-align: center;
+    }
+}

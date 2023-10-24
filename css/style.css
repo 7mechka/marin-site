@@ -222,7 +222,7 @@ h1, h2, h3, h4, h5, h6 {
 .sign-up__form {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 20% 20%;
+  grid-template-rows: 20%;
   gap: 30px 30px;
 }
 .sign-up__input_1 {

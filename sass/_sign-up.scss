@@ -4,7 +4,7 @@
     &__form {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 20% 20%;
+        grid-template-rows: 20%;
         gap: 30px 30px;
     }
     &__input_1 {
@@ -33,6 +33,12 @@
         height: 180px;
         justify-content: flex-end;
     }
+    // .sign-up__input_2 {
+    //     margin-left: 200px;
+    //     display: grid;
+    //     justify-content: center;
+    // }
+
     &__input_check {
         grid-row: 2;
         width: 11.03px;

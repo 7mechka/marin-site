@@ -91,17 +91,27 @@
       </section>
       <section class="sign-up center">
         <h2 class="sign-up__title">Записаться на прием</h2>
-        <form action="" class="sign-up__form">
-          <div class="sign-up__input_1">
-            <input type="text" class="sign-up__input" placeholder="Ваше имя *">
-            <input type="text" class="sign-up__input" placeholder="Ваш телефон *">
-            <input type="text" class="sign-up__input" placeholder="Тема встречи *">
-          </div>
-          <input type="text" class="sign-up__input_area" placeholder="Пожелания">
-          <!-- <div class="sign-up__input_2"> -->
-            <input type="checkbox" class="sign-up__input_check">
-            <button class="btn"></button>
-          <!-- </div> -->
+        <form action="https://fom.in.ua/echo" class="sign-up__form">
+          <section class="sign-up__block-1">
+            <div class="sign-up__input_required">
+              <input type="text" class="sign-up__input" name="name" placeholder="Ваше имя *" required>
+              <input type="text" class="sign-up__input" name="phone" placeholder="Ваш телефон *" required>
+              <select type="text" class="sign-up__input" name="theme" required>
+                <option value="" selected disabled>Тема встречи *</option>
+                <option value="consultation">Консультация</option>
+                <option value="record">Записаться</option>
+                <option value="other">Прочее</option>
+              </select>
+            </div>
+            <textarea type="text" class="sign-up__input_wishes" name="wishes" placeholder="Пожелания"></textarea>
+          </section>
+          <section class="sign-up__block-2">
+            <label for="sign-up__input_check" class="sign-up__label">
+              <input type="checkbox" class="sign-up__input_check" required>
+              Я согласен с политикой конфиденциальности
+            </label>
+            <button class="btn">Отправить</button>
+          </section>
         </form>
       </section>
     </main>

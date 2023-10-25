@@ -377,6 +377,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #FFF;
   width: 250px;
   height: 40px;
+  border: none;
   border-radius: 10px;
   font-size: 18px;
   line-height: 24px;
@@ -526,6 +527,84 @@ h1, h2, h3, h4, h5, h6 {
 }
 .about__btn:active {
   opacity: 0.4;
+}
+
+.sign-up {
+  display: grid;
+  margin: 0 150px;
+}
+.sign-up__form {
+  display: grid;
+  gap: 40px;
+}
+.sign-up__block-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 20%;
+  gap: 30px 30px;
+}
+.sign-up__block-2 {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  justify-content: center;
+  gap: 40px;
+}
+.sign-up__block-2 > .btn {
+  margin-left: 35px;
+}
+.sign-up__block-2 > .sign-up__label {
+  margin-left: 15px;
+}
+.sign-up__input_required {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-column: span 1;
+  gap: 30px;
+}
+.sign-up__input {
+  border-radius: 10px;
+  border: 1px solid;
+  width: 369px;
+  height: 40px;
+  gap: 30px;
+  margin-right: 30px;
+  font-family: Montserrat;
+  font-size: 18px;
+  line-height: 24px;
+  padding-left: 20px;
+  background-color: #FFF;
+}
+.sign-up__input_wishes {
+  display: grid;
+  border-radius: 10px;
+  border: 1px solid;
+  width: 372px;
+  height: 180px;
+  resize: none;
+  font-family: Montserrat;
+  font-size: 18px;
+  line-height: 24px;
+  padding-top: 7px;
+  padding-left: 20px;
+}
+.sign-up__input_check {
+  width: 11.03px;
+  height: 11px;
+  color: #2D5E5E;
+}
+.sign-up__label {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 30px;
+  text-align: left;
+  color: #2D5E5E;
+  margin: 0;
+}
+.sign-up__title {
+  margin: 60px 0 50px;
+  text-align: center;
+  font-size: 48px;
+  line-height: 72px;
 }
 
 /*# sourceMappingURL=style.css.map */

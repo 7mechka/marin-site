@@ -391,6 +391,19 @@ h1, h2, h3, h4, h5, h6 {
   opacity: 0.4;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .nav {
   display: flex;
   justify-content: space-between;
@@ -552,9 +565,6 @@ h1, h2, h3, h4, h5, h6 {
 .sign-up__block-2 > .btn {
   margin-left: 35px;
 }
-.sign-up__block-2 > .sign-up__label {
-  margin-left: 15px;
-}
 .sign-up__input_required {
   display: grid;
   grid-template-columns: 100%;
@@ -600,11 +610,43 @@ h1, h2, h3, h4, h5, h6 {
   color: #2D5E5E;
   margin: 0;
 }
+.sign-up .sign-up__input_check {
+  position: absolute;
+  box-sizing: border-box;
+  z-index: -1;
+  opacity: 0;
+}
+.sign-up .sign-up__input_check + label {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+}
+.sign-up .sign-up__input_check + label::before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 15px;
+  height: 15px;
+  border: 1px solid #2D5E5E;
+  margin-right: 15px;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.sign-up .sign-up__input_check:checked + label::before {
+  content: "";
+  background-image: url(../img/Check.svg);
+}
 .sign-up__title {
   margin: 60px 0 50px;
   text-align: center;
   font-size: 48px;
   line-height: 72px;
+}
+.sign-up__input_label > select {
+  appearance: none;
+  position: relative;
+  background: url(../img/Arrow.svg) no-repeat right;
+  background-position-x: 329px;
 }
 
 /*# sourceMappingURL=style.css.map */

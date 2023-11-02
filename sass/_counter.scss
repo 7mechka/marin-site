@@ -1,0 +1,36 @@
+.counter {
+    background-image: url(../img/counter-bg.jpg);
+    margin: 60px 0;
+    &__list {
+        list-style: none;
+        display: grid;
+        grid-template-columns: repeat(3, 300px);
+        gap: 90px;
+        padding: 60px 0;
+    }
+    &__item {
+        // display: grid;
+        // grid-template-columns: 1em 1em 1em;
+    }
+    &__article {
+        display: grid;
+        grid-template-rows: repeat(3, 33%);
+        text-align: center;
+        color: #FFF;
+    }
+    &__main-title {
+        font-family: Montserrat;
+        font-size: 48px;
+        font-weight: 900;
+        line-height: 72px;
+    }
+    &__second-title {
+        font-size: 24px;
+        line-height: 32px;
+        padding: 14px 0 20px;
+    }
+    &__desc {
+        font-weight: 500;
+        line-height: 24px;
+    }
+}

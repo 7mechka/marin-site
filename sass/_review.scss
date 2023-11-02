@@ -1,0 +1,63 @@
+.review {
+    display: grid;
+    grid-template-rows: 50% 50%;
+    gap: 50px;
+    &__back {
+        background-image: url(../img/Arrow-back.svg);
+        background-color: #FFF;
+        border: none;
+        width: 17px;
+        height: 30px;
+        display: flex;
+        grid-row-start: auto;
+    }
+    &__next {
+        background-image: url(../img/Arrow-next.svg);
+        background-color: #FFF;
+        border: none;
+        width: 17px;
+        height: 30px;
+    }
+    &__title {
+        text-align: center;
+        font-size: 48px;
+        line-height: 72px;
+    }
+    &__div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px 0 30px;
+    }
+    &__comment {
+        display: flex;
+        justify-content: center;
+    }
+    &__container {
+        display: flex;
+        align-items: center;
+    }
+    &__comment-block {
+        background-color: #ADDDDE;
+        width: 600px;
+        margin: 0 43px;
+        display: grid;
+    }
+    &__photo {
+        background-color: #ADDDDE;
+        margin-right: 32px;
+    }
+    &__name {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 24px;
+        color: #2D5E5E;
+    }
+    &__text {
+        padding: 0 25px 20px;
+        font-weight: 300;
+        line-height: 24px;
+        text-align: center;
+
+    }
+}

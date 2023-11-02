@@ -683,4 +683,67 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 24px;
 }
 
+.review {
+  display: grid;
+  grid-template-rows: 50% 50%;
+  gap: 50px;
+}
+.review__back {
+  background-image: url(../img/Arrow-back.svg);
+  background-color: #FFF;
+  border: none;
+  width: 17px;
+  height: 30px;
+  display: flex;
+  grid-row-start: auto;
+}
+.review__next {
+  background-image: url(../img/Arrow-next.svg);
+  background-color: #FFF;
+  border: none;
+  width: 17px;
+  height: 30px;
+}
+.review__title {
+  text-align: center;
+  font-size: 48px;
+  line-height: 72px;
+}
+.review__div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0 30px;
+}
+.review__comment {
+  display: flex;
+  justify-content: center;
+}
+.review__container {
+  display: flex;
+  align-items: center;
+}
+.review__comment-block {
+  background-color: #ADDDDE;
+  width: 600px;
+  margin: 0 43px;
+  display: grid;
+}
+.review__photo {
+  background-color: #ADDDDE;
+  margin-right: 32px;
+}
+.review__name {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+  color: #2D5E5E;
+}
+.review__text {
+  padding: 0 25px 20px;
+  font-weight: 300;
+  line-height: 24px;
+  text-align: center;
+}
+
 /*# sourceMappingURL=style.css.map */

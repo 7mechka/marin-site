@@ -687,6 +687,7 @@ h1, h2, h3, h4, h5, h6 {
   display: grid;
   grid-template-rows: 50% 50%;
   gap: 50px;
+  margin-bottom: 63px;
 }
 .review__back {
   background-image: url(../img/Arrow-back.svg);
@@ -744,6 +745,34 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 300;
   line-height: 24px;
   text-align: center;
+}
+
+.articles {
+  background-image: url(../img/Articles-bg.jpg);
+  background-repeat: no-repeat;
+  display: grid;
+  gap: 50px;
+  margin-bottom: 28px;
+}
+.articles__list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, 33%);
+}
+.articles__title {
+  padding-top: 60px;
+  font-size: 48px;
+  line-height: 72px;
+  color: #FFF;
+}
+.articles__link {
+  margin: 25px 0 28px;
+  display: inline-block;
+  font-family: Oswald;
+  font-size: 24px;
+  line-height: 32px;
+  text-decoration: none;
+  color: #FFF;
 }
 
 /*# sourceMappingURL=style.css.map */

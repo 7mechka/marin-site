@@ -11,24 +11,36 @@
     &__item {
         display: flex;
         padding-bottom: 20px;
-        &::before {
-            content: '';
+        &-title {
+            display: inline;
+            padding-left: 20px;
+            font-family: Oswald;
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 32px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            user-select: none;
+        }
+        & details[open] {
+            .question__item-title {
+                color: #2D5E5E;
+            }
+        }
+        &-icon {
             display: inline-block;
             background-image: url(../img/Question__item.svg);
-            width: 20px;
-            height: 20px;
-            margin-top: 7px;
-        }
-    }
-    &__item_active {
-        &::before {
-            content: '';
-            display: inline-block;
-            background-image: url(../img/Question__item-active.svg);
             background-repeat: no-repeat;
             width: 20px;
             height: 20px;
-            margin-right: -4px;
+            top: 0;
+            left: 0;
+        }
+        & details[open] {
+            .question__item-icon {
+                background-image: url(../img/Question__item-active.svg);
+            }
         }
     }
     &__desc {
@@ -38,24 +50,36 @@
         line-height: 24px;
     }
     &__item-title {
-        display: inline;
-        padding-left: 20px;
-        font-family: Oswald;
-        font-size: 24px;
-        font-weight: 700;
-        line-height: 32px;
-        background: none;
-        border: none;
-        &_active {
-            display: inline;
-            padding-left: 20px;
-            font-family: Oswald;
-            font-size: 24px;
-            font-weight: 700;
-            line-height: 32px;
-            background: none;
-            border: none;
-            color: #2D5E5E;
-        }
+        // display: inline;
+        // padding-left: 20px;
+        // font-family: Oswald;
+        // font-size: 24px;
+        // font-weight: 700;
+        // line-height: 32px;
+        // background: none;
+        // border: none;
+
+        // &_active {
+        //     display: inline;
+        //     padding-left: 20px;
+        //     font-family: Oswald;
+        //     font-size: 24px;
+        //     font-weight: 700;
+        //     line-height: 32px;
+        //     background: none;
+        //     border: none;
+        //     color: #2D5E5E;
+        // }
+        
     }
 }
+// .question_item-icon {
+//     display: flex;
+//     background-image: url(../img/Question__item.svg);
+//     background-repeat: no-repeat;
+//     width: 20px;
+//     height: 20px;
+//     top: 0;
+//     left: 0;
+
+// }

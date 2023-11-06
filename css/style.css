@@ -852,6 +852,8 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
   margin-top: 60px;
   background-image: url(../img/map.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
   height: 600px;
 }
 .map__title {

@@ -1,5 +1,7 @@
 .about {
     background-image: url(../img/About_BG.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
     height: 450px;
     &__img {
         float: right;

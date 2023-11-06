@@ -451,6 +451,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .offers {
   background-image: url(../img/photo_to_main_offer.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
   color: #fff;
   height: 768px;
 }
@@ -498,6 +500,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .about {
   background-image: url(../img/About_BG.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
   height: 450px;
 }
 .about__img {
@@ -665,6 +669,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .counter {
   background-image: url(../img/counter-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
   margin: 60px 0;
 }
 .counter__list {
@@ -763,6 +769,7 @@ h1, h2, h3, h4, h5, h6 {
 .articles {
   background-image: url(../img/Articles-bg.jpg);
   background-repeat: no-repeat;
+  background-position: center;
   display: grid;
   gap: 50px;
   margin-bottom: 28px;

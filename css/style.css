@@ -949,4 +949,29 @@ h1, h2, h3, h4, h5, h6 {
   display: block;
 }
 
+.footer {
+  background: #2D5E5E;
+  height: 190px;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+.footer__list {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+.footer__link {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+.footer__desc {
+  padding-left: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+  color: #FFF;
+}
+
 /*# sourceMappingURL=style.css.map */

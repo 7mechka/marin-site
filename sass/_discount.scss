@@ -4,11 +4,22 @@
         font-size: 48px;
         line-height: 72px;
         margin: 60px;
+        @media screen and (max-width: 810px) {
+            font-size: 44px;
+        }
     }
     &__check-block {
         display: flex;
         justify-content: center;
         margin: 25px 0 60px;
+    }
+    &__input-block {
+        @media screen and (max-width: 810px) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
     }
     &__input {
         border-radius: 10px;

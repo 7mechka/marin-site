@@ -499,10 +499,20 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 72px;
   padding-top: 241px;
 }
+@media screen and (max-width: 810px) {
+  .offers__title {
+    font-size: 42px;
+  }
+}
 .offers__desk {
   font-size: 24px;
   line-height: 36px;
   padding: 55px 0;
+}
+@media screen and (max-width: 810px) {
+  .offers__desk {
+    font-size: 20px;
+  }
 }
 
 .service__list {

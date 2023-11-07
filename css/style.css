@@ -1083,10 +1083,21 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
   gap: 50px;
 }
+@media screen and (max-width: 810px) {
+  .footer {
+    justify-content: space-between;
+  }
+}
 .footer__list {
   list-style: none;
   display: flex;
   gap: 30px;
+}
+@media screen and (max-width: 810px) {
+  .footer__list {
+    gap: 15px;
+    flex-direction: column;
+  }
 }
 .footer__link {
   text-decoration: none;

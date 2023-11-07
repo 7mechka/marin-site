@@ -707,31 +707,47 @@ h1, h2, h3, h4, h5, h6 {
   color: #2D5E5E;
   margin: 0;
 }
-.sign-up .sign-up__input_check {
+.sign-up .sign-up__form-check {
   position: absolute;
   box-sizing: border-box;
-  z-index: -1;
-  opacity: 0;
+  cursor: pointer;
+  display: block;
 }
-.sign-up .sign-up__input_check + label {
+.sign-up .sign-up__form-check + label {
+  color: #2D5E5E;
+  position: relative;
   display: inline-flex;
   align-items: center;
   user-select: none;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 20px;
+  padding-left: 30px;
 }
-.sign-up .sign-up__input_check + label::before {
+.sign-up .sign-up__form-check + label::before, .sign-up .sign-up__form-check + label::after {
   content: "";
-  display: inline-block;
-  vertical-align: middle;
+  margin-top: 2px;
+  display: block;
+  position: absolute;
+  left: 0;
+  box-sizing: border-box;
+}
+.sign-up .sign-up__form-check + label::before {
+  background: #FFF;
+  border: 1px solid #2D5E5E;
   width: 15px;
   height: 15px;
-  border: 1px solid #2D5E5E;
-  margin-right: 15px;
-  background-repeat: no-repeat;
-  background-position: center center;
 }
-.sign-up .sign-up__input_check:checked + label::before {
-  content: "";
-  background-image: url(../img/Check.svg);
+.sign-up .sign-up__form-check + label::after {
+  background: #2D5E5E;
+  width: 11px;
+  height: 11px;
+  left: 2px;
+  display: none;
+}
+.sign-up .sign-up__form-check:checked + label::after {
+  display: block;
 }
 .sign-up__title {
   margin: 60px 0 50px;
@@ -743,7 +759,7 @@ h1, h2, h3, h4, h5, h6 {
   appearance: none;
   position: relative;
   background: url(../img/Arrow.svg) no-repeat right;
-  background-position-x: 329px;
+  background-position-x: 270px;
 }
 
 .counter {

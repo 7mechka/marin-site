@@ -74,30 +74,46 @@
         color: #2D5E5E;
         margin: 0;
     }
-    .sign-up__input_check {
+    .sign-up__form-check {
         position: absolute;
         box-sizing: border-box;
-        z-index: -1;
-        opacity: 0;
+        cursor: pointer;
+        display: block;
         &+label {
+            color: #2D5E5E;
+            position: relative;
             display: inline-flex;
             align-items: center;
             user-select: none;
-            &::before {
-                content: "";
-                display: inline-block;
-                vertical-align: middle;
+            font-family: Montserrat;
+            font-size: 12px;
+            font-weight: 500;
+            line-height: 20px;
+            padding-left: 30px;
+            &::before, &::after {
+                content: '';
+                margin-top: 2px;
+                display: block;
+                position: absolute;
+                left: 0;
+                box-sizing: border-box;
+              }
+              &::before {
+                background: #FFF;
+                border: 1px solid #2D5E5E;
                 width: 15px;
                 height: 15px;
-                border: 1px solid #2D5E5E;
-                margin-right: 15px;
-                background-repeat: no-repeat;
-                background-position: center center;
+              }
+              &::after {
+                background: #2D5E5E;
+                width: 11px;
+                height: 11px;
+                left: 2px;
+                display: none;
               }
         }
-        &:checked+label::before {
-            content: "";
-            background-image: url(../img/Check.svg);
+        &:checked+label::after {
+            display: block;
         }
     }
     &__title {
@@ -106,10 +122,12 @@
         font-size: 48px;
         line-height: 72px;
     }
+    // &__inout_label {
+    // }
     &__input_label>select {
         appearance: none;
         position: relative;
         background: url(../img/Arrow.svg) no-repeat right;
-        background-position-x: 329px;
+        background-position-x: 270px;
     }
 }

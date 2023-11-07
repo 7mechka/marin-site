@@ -9,6 +9,10 @@ summary {
 .center {
     padding-left: calc(50vw - 555px);
     padding-right: calc(50vw - 555px);
+    @media screen and (max-width: 810px) {
+        padding-left: calc(50vw - 350px);
+        padding-right: calc(50vw - 350px);
+    }
 }
 body {
     font-family: Montserrat;

@@ -363,6 +363,12 @@ summary {
   padding-left: calc(50vw - 555px);
   padding-right: calc(50vw - 555px);
 }
+@media screen and (max-width: 810px) {
+  .center {
+    padding-left: calc(50vw - 350px);
+    padding-right: calc(50vw - 350px);
+  }
+}
 
 body {
   font-family: Montserrat;
@@ -420,6 +426,11 @@ h1, h2, h3, h4, h5, h6 {
   padding-top: 54px;
   gap: 15px;
 }
+.nav__item {
+  display: flex;
+  justify-content: end;
+  height: 22px;
+}
 .nav__link {
   text-decoration: none;
   color: #85AAAB;
@@ -449,6 +460,28 @@ h1, h2, h3, h4, h5, h6 {
   opacity: 0.4;
 }
 
+.nav__menu-label {
+  display: none;
+  color: #FFF;
+  position: absolute;
+  color: #85AAAB;
+  font-size: 18px;
+  font-weight: 700;
+  margin: 20px 0 0 635px;
+}
+
+@media screen and (max-width: 810px) {
+  .nav__list {
+    display: none;
+  }
+  .nav__menu-label {
+    display: block;
+  }
+  .nav__menu:checked + .nav__list {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .logo {
   padding-top: 30px;
 }
@@ -845,6 +878,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 500;
   line-height: 24px;
 }
+
 .map {
   display: flex;
   justify-content: flex-end;

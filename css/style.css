@@ -759,6 +759,12 @@ h1, h2, h3, h4, h5, h6 {
   gap: 90px;
   padding: 60px 0;
 }
+@media screen and (max-width: 810px) {
+  .counter__list {
+    grid-template-columns: repeat(3, 230px);
+    gap: 10px;
+  }
+}
 .counter__article {
   display: grid;
   grid-template-rows: repeat(3, 33%);
@@ -771,14 +777,29 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 900;
   line-height: 72px;
 }
+@media screen and (max-width: 810px) {
+  .counter__main-title {
+    font-size: 38px;
+  }
+}
 .counter__second-title {
   font-size: 24px;
   line-height: 32px;
   padding: 14px 0 20px;
 }
+@media screen and (max-width: 810px) {
+  .counter__second-title {
+    font-size: 20px;
+  }
+}
 .counter__desc {
   font-weight: 500;
   line-height: 24px;
+}
+@media screen and (max-width: 810px) {
+  .counter__desc {
+    font-size: 14px;
+  }
 }
 
 .review {

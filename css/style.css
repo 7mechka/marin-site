@@ -628,6 +628,11 @@ h1, h2, h3, h4, h5, h6 {
   display: grid;
   margin: 0 150px;
 }
+@media screen and (max-width: 810px) {
+  .sign-up {
+    margin: 0;
+  }
+}
 .sign-up__form {
   display: grid;
   gap: 40px;
@@ -666,6 +671,11 @@ h1, h2, h3, h4, h5, h6 {
   padding-left: 20px;
   background-color: #FFF;
 }
+@media screen and (max-width: 810px) {
+  .sign-up__input {
+    width: 300px;
+  }
+}
 .sign-up__input_wishes {
   display: grid;
   border-radius: 10px;
@@ -678,6 +688,11 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 24px;
   padding-top: 7px;
   padding-left: 20px;
+}
+@media screen and (max-width: 810px) {
+  .sign-up__input_wishes {
+    width: 340px;
+  }
 }
 .sign-up__input_check {
   width: 11.03px;

@@ -11,8 +11,10 @@
     <header>
       <nav class="nav center">
         <a href="#" class="logo">
-          <img src="/img/logo.png" alt="Logo" />
+          <img src="img/logo.png" alt="Logo" />
         </a>
+        <input type="checkbox" id="nav__menu" class="nav__menu visually-hidden">
+        <!-- <label for="nav__menu" class="nav__menu-label">MENU</label> -->
         <ul class="nav__list">
           <li class="nav__item">
             <a href="#" class="nav__link_active">Главная</a>
@@ -23,6 +25,7 @@
           <li class="nav__item"><a href="#" class="nav__link">Контакты</a></li>
           <li class="nav__item"><a href="#" class="nav__link">Блог</a></li>
         </ul>
+        <label for="nav__menu" class="nav__menu-label">MENU</label>
       </nav>
       <section class="offers center">
         <article class="offers__article">
@@ -114,6 +117,174 @@
           </section>
         </form>
       </section>
+      <section class="counter center">
+        <ul class="counter__list">
+          <li class="counter__item">
+            <article class="counter__article">
+              <h2 class="counter__main-title">120 мин</h2>
+              <h3 class="counter__second-title">Время консультации</h3>
+              <p class="counter__desc">Оптимально для того, чтобы найти выход и сделать очередной шаг</p>
+            </article>
+          </li>
+          <li class="counter__item">
+            <article class="counter__article">
+              <h2 class="counter__main-title">от 200 грн</h2>
+              <h3 class="counter__second-title">Стоимость</h3>
+              <p class="counter__desc">Цена доступна для любого человека, нуждающего в помощи</p>
+            </article>
+          </li>
+          <li class="counter__item">
+            <article class="counter__article">
+              <h2 class="counter__main-title">75+</h2>
+              <h3 class="counter__second-title">Довольных клиентов</h3>
+              <p class="counter__desc">Результат — улыбка на лице и ощущение счастья</p>
+            </article>
+          </li>
+        </ul>
+      </section>
+      <section class="review center">
+        <h2 class="review__title">Отзывы клиентов</h2>
+        <section class="review__comment">
+          <section class="review__container">
+            <button class="review__back"></button>
+            <section class="review__comment-block">
+              <div class="review__div">
+                <img src="./img/girl.png" alt="photo" class="review__photo">
+                <span class="review__name">Марина, 25 лет</span>
+              </div>
+              <p class="review__text">Обратилась к Сергею, потому что нервы уже были на пределе. 
+                Ситуация казалась мне безвыходной – несмотря на то, что я работаю и учусь. 
+                Сама не заметила, как избавилась от огромного кома. 
+                Наконец-то увидела выход из сложившейся ситуации и теперь есть надежда... 
+                Большое спасибо Валентину. </p>
+            </section>
+            <button class="review__next"></button>
+          </section>
+        </section>
+      </section>
+      <section class="articles center">
+        <h2 class="articles__title">Последние статьи</h2>
+        <ul class="articles__list">
+          <li class="articles__item">
+            <img src="./img/news-1.jpg" alt="news-1" class="articles__img">
+            <a href="#" class="articles__link">Жить, а не бояться: 
+              как справляться с канцерофобией</a>
+          </li>
+          <li class="articles__item">
+            <img src="./img/news-2.jpg" alt="news-2" class="articles__img">
+            <a href="#" class="articles__link">Брат мой, враг мой: почему враждуют братья и сестры?</a>
+          </li>
+          <li class="articles__item">
+            <img src="./img/news-3.jpg" alt="news-3" class="articles__img">
+            <a  href="#" class="articles__link">8 советов, как оставаться продуктивным и не сойти с ума</a>
+          </li>
+        </ul>
+      </section>
+      <section class="question center">
+        <h2 class="question__title">Частые вопросы</h2>
+        <ul class="question__list">
+          <li class="question__item">
+            <details open>
+              <summary>
+                <span class="question__item-icon"></span>
+                <h3 class="question__item-title">Какой у вас график работы?</h3>
+              </summary>
+              <p class="question__desc">Я работаю и провожу консультации с понедельника по субботу с 15:00 до 21:00. 
+                Записаться на прием можно в любой день с 9:00 до 21:00</p>
+            </details>
+          </li>
+          <li class="question__item">
+            <details>
+              <summary>
+                <span class="question__item-icon"></span>
+                <h3 class="question__item-title">Сколько длится сессия?</h3>
+              </summary>
+              <p class="question__desc">Средняя длительность сессии 120 минут</p>
+            </details>
+          </li>
+          <li class="question__item">
+            <details>
+              <summary>
+                <span class="question__item-icon"></span>
+                <h3 class="question__item-title">Сколько стоит консультация?</h3>
+              </summary>
+              <p class="question__desc">Цена консультации становит 100 грн</p>
+            </details>
+          </li>
+          <li class="question__item">
+            <details>
+              <summary>
+                <span class="question__item-icon"></span>
+                <h3 class="question__item-title">Что из себя представляют консультации?</h3>
+              </summary>
+              <p class="question__desc">Консультации - это возможность обсудить свои проблемы, 
+                найти решения и поддержку от опытного психолога.</p>
+            </details>
+          </li>
+        </ul>
+      </section>
+      <section class="map center">
+        <section class="map__info-block">
+          <h2 class="map__title">Контакты</h2>
+          <ul class="map__list">
+            <li class="map__item"><a href="#" class="map__link">Тел: +380 99 123 45 67</a></li>
+            <li class="map__item"><a href="#" class="map__link">Viber: +380 99 123 45 67</a></li>
+            <li class="map__item"><a href="#" class="map__link">Telegram: @phyholog_sergei</a></li>
+            <li class="map__item"><a href="#" class="map__link">Instagram: @phyholog_sergei</a></li>
+            <li class="map__item"><a href="#" class="map__link">E-mail: phyholog_sergei@gmail.com</a></li>
+            <li><p class="map__link">Адрес: Ул. Центральная д. 10, офис 1</p></li>
+          </ul>
+        </section>
+      </section>
+      <section class="discount center">
+        <h2 class="discount__title">Записаться со скидкой 50 грн</h2>
+        <form action="https://fom.in.ua/echo">
+          <section class="discount__form-block">
+            <section class="discount__input-block">
+              <input type="text" class="discount__input" name="name" placeholder="Ваше имя *" required>
+              <input type="text" class="discount__input" name="phone" placeholder="Ваш телефон *" required>
+              <button class="btn">Записаться со скидкой</button>
+            </section>
+            <section class="discount__check-block">
+              <input id="a1" type="checkbox" class="discount__form-check  visually-hidden" required>
+              <label for="a1" class="discount__form-label">Я согласен с политикой конфиденциальности</label>
+            </section>
+          </section>
+        </form>
+      </section>
     </main>
+    <footer>
+      <section class="footer center">
+        <a href="" class="footer__logo-link">
+          <img src="./img/logo.png" alt="logo">
+        </a>
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a href="#" class="footer__link">
+              <img src="./img/instagram-logo.svg" alt="insta" class="footer__icon">
+              <span class="footer__desc">@phyholog_sergei</span>
+            </a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">
+              <img src="./img/viber-logo.svg" alt="viber" class="footer__icon">
+              <span class="footer__desc">+380 99 123 45 67</span>
+            </a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">
+              <img src="./img/telegram-logo.svg" alt="Telegram" class="footer__icon">
+              <span class="footer__desc">@phyholog_sergei</span>
+            </a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">
+              <img src="./img/phone-call.svg" alt="phone" class="footer__icon"
+              ><span class="footer__desc">+380 99 123 45 67</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+    </footer>
   </body>
 </html>

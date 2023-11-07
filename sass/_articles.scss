@@ -1,0 +1,28 @@
+.articles {
+    background-image: url(../img/Articles-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    display: grid;
+    gap: 50px;
+    margin-bottom: 28px;
+    &__list {
+        list-style: none;
+        display: grid;
+        grid-template-columns: repeat(3, 33%);
+    }
+    &__title {
+        padding-top: 60px;
+        font-size: 48px;
+        line-height: 72px;
+        color: #FFF;
+    }
+    &__link {
+        margin: 25px 0 28px;
+        display: inline-block;
+        font-family: Oswald;
+        font-size: 24px;
+        line-height: 32px;
+        text-decoration: none;
+        color: #FFF;
+    }
+}

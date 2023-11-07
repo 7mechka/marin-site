@@ -9,6 +9,11 @@
         padding-top: 54px;
         gap: 15px;
     }
+    &__item {
+        display: flex;
+        justify-content: end;
+        height: 22px;
+    }
     &__link {
         text-decoration: none;
         color: #85AAAB;
@@ -36,6 +41,27 @@
         &:active {
             opacity: .4;
         }
+    }
+}
+.nav__menu-label {
+    display: none;
+    color: #FFF;
+    position: absolute;
+    color: #85AAAB;
+    font-size: 18px;
+    font-weight: 700;
+    margin: 20px 0 0 635px;
+}
+@media screen and (max-width: 810px) {
+    .nav__list {
+        display: none;
+    }
+    .nav__menu-label {
+        display: block;
+    }
+    .nav__menu:checked + .nav__list {
+        display: flex;
+        flex-direction: column;
     }
 }
 .logo {

@@ -3,15 +3,23 @@
     padding: 0;
     box-sizing: border-box;
 }
+summary {
+    list-style: none;
+}
 .center {
     padding-left: calc(50vw - 555px);
     padding-right: calc(50vw - 555px);
+    @media screen and (max-width: 810px) {
+        padding-left: calc(50vw - 350px);
+        padding-right: calc(50vw - 350px);
+    }
 }
 body {
     font-family: Montserrat;
 }
 h1, h2, h3, h4, h5, h6 {
     font-family: Oswald;
+    margin: 0;
 }
 .btn {
     display: inline-flex;

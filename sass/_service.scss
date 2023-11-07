@@ -10,7 +10,6 @@
         flex-direction: column;
         align-items: center;
         padding: 60px 0 37px;
-        // margin: 0 90px;
     }
     &__img {
         width: 56px;
@@ -23,11 +22,17 @@
         text-align: center;
         color: #2D5E5E;
         padding: 30px 20px;
+        @media screen and (max-width: 810px) {
+            font-size: 20px;
+        }
     }
     &__desc {
         font-size: 16px;
         font-weight: 500;
         line-height: 24px;
         text-align: center;
+        @media screen and (max-width: 810px) {
+            font-size: 14px;
+        }
     }
 }

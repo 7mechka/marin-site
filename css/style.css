@@ -1134,6 +1134,11 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 48px;
   line-height: 72px;
 }
+@media screen and (max-width: 415px) {
+  .question__title {
+    font-size: 36px;
+  }
+}
 .question__list {
   list-style: none;
 }
@@ -1152,6 +1157,11 @@ h1, h2, h3, h4, h5, h6 {
   border: none;
   cursor: pointer;
   user-select: none;
+}
+@media screen and (max-width: 415px) {
+  .question__item-title {
+    font-size: 21px;
+  }
 }
 .question__item details[open] .question__item-title {
   color: #2D5E5E;

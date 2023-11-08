@@ -515,10 +515,21 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+@media screen and (max-width: 400px) {
+  .service {
+    display: flex;
+    justify-content: center;
+  }
+}
 .service__list {
   list-style: none;
   display: flex;
   justify-content: space-between;
+}
+@media screen and (max-width: 400px) {
+  .service__list {
+    flex-direction: column;
+  }
 }
 .service__item {
   width: 300px;

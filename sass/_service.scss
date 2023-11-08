@@ -1,8 +1,15 @@
 .service {
+    @media screen and (max-width: 400px) {
+            display: flex;
+            justify-content: center;
+    }
     &__list {
         list-style: none;
         display: flex;
         justify-content: space-between;
+        @media screen and (max-width: 400px) {
+            flex-direction: column;
+        }
     }
     &__item {
         width: 300px;

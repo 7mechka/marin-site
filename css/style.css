@@ -497,6 +497,11 @@ h1, h2, h3, h4, h5, h6 {
 .logo {
   padding-top: 30px;
 }
+@media screen and (max-width: 400px) {
+  .logo {
+    height: 100px;
+  }
+}
 
 .offers {
   background-image: url(../img/photo_to_main_offer.jpg);
@@ -504,6 +509,12 @@ h1, h2, h3, h4, h5, h6 {
   background-position: center;
   color: #fff;
   height: 768px;
+}
+@media screen and (max-width: 400px) {
+  .offers {
+    background-image: none;
+    background-color: #9d9c97;
+  }
 }
 .offers__title {
   font-size: 48px;
@@ -516,6 +527,12 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 42px;
   }
 }
+@media screen and (max-width: 400px) {
+  .offers__title {
+    font-size: 36px;
+    line-height: 41px;
+  }
+}
 .offers__desk {
   font-size: 24px;
   line-height: 36px;
@@ -524,6 +541,13 @@ h1, h2, h3, h4, h5, h6 {
 @media screen and (max-width: 810px) {
   .offers__desk {
     font-size: 20px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .offers__desk {
+    line-height: 23px;
+    font-size: 16px;
+    padding: 40px 0;
   }
 }
 

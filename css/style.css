@@ -718,7 +718,7 @@ h1, h2, h3, h4, h5, h6 {
 .about__btn:active {
   opacity: 0.4;
 }
-@media screen and (max-width: 415px) {
+@media screen and (max-width: 810px) {
   .about__btn {
     margin-right: 0;
     color: #000;
@@ -743,6 +743,12 @@ h1, h2, h3, h4, h5, h6 {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 20%;
   gap: 30px 30px;
+}
+@media screen and (max-width: 415px) {
+  .sign-up__block-1 {
+    grid-template-columns: unset;
+    grid-template-rows: unset;
+  }
 }
 .sign-up__block-2 {
   display: grid;
@@ -777,6 +783,12 @@ h1, h2, h3, h4, h5, h6 {
     width: 300px;
   }
 }
+@media screen and (max-width: 415px) {
+  .sign-up__input {
+    width: 320px;
+    margin-right: 0;
+  }
+}
 .sign-up__input_wishes {
   display: grid;
   border-radius: 10px;
@@ -793,6 +805,11 @@ h1, h2, h3, h4, h5, h6 {
 @media screen and (max-width: 810px) {
   .sign-up__input_wishes {
     width: 340px;
+  }
+}
+@media screen and (max-width: 415px) {
+  .sign-up__input_wishes {
+    width: 320px;
   }
 }
 .sign-up__input_check {
@@ -826,6 +843,11 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 20px;
   padding-left: 30px;
 }
+@media screen and (max-width: 415px) {
+  .sign-up .sign-up__form-check + label {
+    font-size: 11px;
+  }
+}
 .sign-up .sign-up__form-check + label::before, .sign-up .sign-up__form-check + label::after {
   content: "";
   margin-top: 2px;
@@ -855,6 +877,12 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
   font-size: 48px;
   line-height: 72px;
+}
+@media screen and (max-width: 415px) {
+  .sign-up__title {
+    font-size: 35px;
+    margin: 30px 0;
+  }
 }
 .sign-up__input_label > select {
   appearance: none;

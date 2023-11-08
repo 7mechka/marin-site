@@ -13,6 +13,10 @@ summary {
         padding-left: calc(50vw - 350px);
         padding-right: calc(50vw - 350px);
     }
+    @media screen and (max-width: 400px) {
+        padding-left: calc(50vw - 160px);
+        padding-right: calc(50vw - 160px);
+    }
 }
 body {
     font-family: Montserrat;

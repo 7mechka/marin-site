@@ -369,6 +369,12 @@ summary {
     padding-right: calc(50vw - 350px);
   }
 }
+@media screen and (max-width: 400px) {
+  .center {
+    padding-left: calc(50vw - 160px);
+    padding-right: calc(50vw - 160px);
+  }
+}
 
 body {
   font-family: Montserrat;
@@ -480,6 +486,12 @@ h1, h2, h3, h4, h5, h6 {
   .nav__menu:checked + .nav__list {
     display: flex;
     flex-direction: column;
+  }
+}
+@media screen and (max-width: 810px) {
+  .nav__menu-label {
+    display: block;
+    margin: 20px 0 0 270px;
   }
 }
 .logo {

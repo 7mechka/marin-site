@@ -5,7 +5,6 @@
     height: 450px;
     display: grid;
     grid-template-columns: 1fr auto;
-    // grid-template-rows: auto 1fr auto;
     @media screen and (max-width: 810px) {
         grid-template-columns: 1fr;
         background-image: none;
@@ -95,9 +94,4 @@
             color: #000;
         }
     }
-    // &__div {
-    //     @media screen and (max-width: 810px) {
-    //         display: flex;
-    //     }
-    // }
 }

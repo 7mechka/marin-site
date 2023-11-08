@@ -4,7 +4,7 @@
     background-position: center;
     color: #fff;
     height: 768px;
-    @media screen and (max-width: 400px) {
+    @media screen and (max-width: 415px) {
         background-image: none;
         background-color: #9d9c97;
     }
@@ -16,7 +16,7 @@
         @media screen and (max-width: 810px) {
             font-size: 42px;
         }
-        @media screen and (max-width: 400px) {
+        @media screen and (max-width: 415px) {
             font-size: 36px;
             line-height: 41px;
         }
@@ -28,7 +28,7 @@
         @media screen and (max-width: 810px) {
             font-size: 20px;
         }
-        @media screen and (max-width: 400px) {
+        @media screen and (max-width: 415px) {
             line-height: 23px;
             font-size: 16px;
             padding: 40px 0;   

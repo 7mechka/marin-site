@@ -5,6 +5,10 @@
     display: grid;
     gap: 50px;
     margin-bottom: 28px;
+    @media screen and (max-width: 415px) {
+            background-image: none;
+            background-color: #D9D9D9;
+    }
     &__list {
         list-style: none;
         display: grid;
@@ -12,10 +16,16 @@
         @media screen and (max-width: 810px) {
             gap: 15px;
         }
+        @media screen and (max-width: 415px) {
+            grid-template-columns: unset;
+        }
     }
     &__img {
         @media screen and (max-width: 810px) {
             width: 75%;
+        }
+        @media screen and (max-width: 415px) {
+            width: auto;
         }
     }
     &__title {
@@ -23,6 +33,10 @@
         font-size: 48px;
         line-height: 72px;
         color: #FFF;
+        @media screen and (max-width: 415px) {
+            color: #000;
+            font-size: 36px;
+        }
     }
     &__link {
         margin: 25px 0 28px;
@@ -35,6 +49,9 @@
         @media screen and (max-width: 810px) {
             font-size: 22px;
             line-height: 25px;
+        }
+        @media screen and (max-width: 415px) {
+            color: #000;
         }
     }
 }

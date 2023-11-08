@@ -144,6 +144,9 @@
         appearance: none;
         position: relative;
         background: url(../img/Arrow.svg) no-repeat right;
-        background-position-x: 270px;
+        background-position-x: 335px;
+        @media screen and (max-width: 810px) {
+            background-position-x: 270px;
+        }
     }
 }

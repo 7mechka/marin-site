@@ -888,7 +888,12 @@ h1, h2, h3, h4, h5, h6 {
   appearance: none;
   position: relative;
   background: url(../img/Arrow.svg) no-repeat right;
-  background-position-x: 270px;
+  background-position-x: 335px;
+}
+@media screen and (max-width: 810px) {
+  .sign-up__input_label > select {
+    background-position-x: 270px;
+  }
 }
 
 .counter {

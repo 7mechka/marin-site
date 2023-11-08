@@ -3,6 +3,10 @@
     background-repeat: no-repeat;
     background-position: center;
     margin: 60px 0;
+    @media screen and (max-width: 415px) {
+            background-image: none;
+            background-color: #D9D9D9;
+    }
     &__list {
         list-style: none;
         display: grid;
@@ -13,12 +17,19 @@
             grid-template-columns: repeat(3, 230px);
             gap: 10px;
         }
+        @media screen and (max-width: 415px) {
+            grid-template-columns: none;
+            gap: 90px;
+        }
     }
     &__article {
         display: grid;
         grid-template-rows: repeat(3, 33%);
         text-align: center;
         color: #FFF;
+        @media screen and (max-width: 415px) {
+            color: #000;
+        }
     }
     &__main-title {
         font-family: Montserrat;

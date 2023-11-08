@@ -493,7 +493,7 @@ h1, h2, h3, h4, h5, h6 {
     flex-direction: column;
   }
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 415px) {
   .nav__menu-label {
     display: block;
     margin: 20px 0 0 270px;
@@ -502,7 +502,7 @@ h1, h2, h3, h4, h5, h6 {
 .logo {
   padding-top: 30px;
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 415px) {
   .logo {
     height: 100px;
   }
@@ -515,7 +515,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
   height: 768px;
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 415px) {
   .offers {
     background-image: none;
     background-color: #9d9c97;
@@ -532,7 +532,7 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 42px;
   }
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 415px) {
   .offers__title {
     font-size: 36px;
     line-height: 41px;
@@ -548,7 +548,7 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 20px;
   }
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 415px) {
   .offers__desk {
     line-height: 23px;
     font-size: 16px;
@@ -897,6 +897,12 @@ h1, h2, h3, h4, h5, h6 {
   background-position: center;
   margin: 60px 0;
 }
+@media screen and (max-width: 415px) {
+  .counter {
+    background-image: none;
+    background-color: #D9D9D9;
+  }
+}
 .counter__list {
   list-style: none;
   display: grid;
@@ -910,11 +916,22 @@ h1, h2, h3, h4, h5, h6 {
     gap: 10px;
   }
 }
+@media screen and (max-width: 415px) {
+  .counter__list {
+    grid-template-columns: none;
+    gap: 90px;
+  }
+}
 .counter__article {
   display: grid;
   grid-template-rows: repeat(3, 33%);
   text-align: center;
   color: #FFF;
+}
+@media screen and (max-width: 415px) {
+  .counter__article {
+    color: #000;
+  }
 }
 .counter__main-title {
   font-family: Montserrat;

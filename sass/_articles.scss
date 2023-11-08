@@ -9,6 +9,14 @@
         list-style: none;
         display: grid;
         grid-template-columns: repeat(3, 33%);
+        @media screen and (max-width: 810px) {
+            gap: 15px;
+        }
+    }
+    &__img {
+        @media screen and (max-width: 810px) {
+            width: 75%;
+        }
     }
     &__title {
         padding-top: 60px;
@@ -24,5 +32,9 @@
         line-height: 32px;
         text-decoration: none;
         color: #FFF;
+        @media screen and (max-width: 810px) {
+            font-size: 22px;
+            line-height: 25px;
+        }
     }
 }

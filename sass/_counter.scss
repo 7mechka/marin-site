@@ -9,6 +9,10 @@
         grid-template-columns: repeat(3, 300px);
         gap: 90px;
         padding: 60px 0;
+        @media screen and (max-width: 810px) {
+            grid-template-columns: repeat(3, 230px);
+            gap: 10px;
+        }
     }
     &__article {
         display: grid;
@@ -21,14 +25,23 @@
         font-size: 48px;
         font-weight: 900;
         line-height: 72px;
+        @media screen and (max-width: 810px) {
+            font-size: 38px;
+        }
     }
     &__second-title {
         font-size: 24px;
         line-height: 32px;
         padding: 14px 0 20px;
+        @media screen and (max-width: 810px) {
+            font-size: 20px;
+        }
     }
     &__desc {
         font-weight: 500;
         line-height: 24px;
+        @media screen and (max-width: 810px) {
+            font-size: 14px;
+        }
     }
 }

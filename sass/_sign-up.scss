@@ -1,6 +1,9 @@
 .sign-up {
     display: grid;
     margin: 0 150px;
+    @media screen and (max-width: 810px) {
+        margin: 0;
+    }
     &__form {
         display: grid;
         gap: 40px;
@@ -38,6 +41,9 @@
         line-height: 24px;
         padding-left: 20px;
         background-color: #FFF;
+        @media screen and (max-width: 810px) {
+            width: 300px;
+        }
     }
     &__input_wishes {
         display: grid;
@@ -51,6 +57,9 @@
         line-height: 24px;
         padding-top: 7px;
         padding-left: 20px;
+        @media screen and (max-width: 810px) {
+            width: 340px;
+        }
     }
     &__input_check {
         width: 11.03px;
@@ -65,6 +74,48 @@
         color: #2D5E5E;
         margin: 0;
     }
+    .sign-up__form-check {
+        position: absolute;
+        box-sizing: border-box;
+        cursor: pointer;
+        display: block;
+        &+label {
+            color: #2D5E5E;
+            position: relative;
+            display: inline-flex;
+            align-items: center;
+            user-select: none;
+            font-family: Montserrat;
+            font-size: 12px;
+            font-weight: 500;
+            line-height: 20px;
+            padding-left: 30px;
+            &::before, &::after {
+                content: '';
+                margin-top: 2px;
+                display: block;
+                position: absolute;
+                left: 0;
+                box-sizing: border-box;
+              }
+              &::before {
+                background: #FFF;
+                border: 1px solid #2D5E5E;
+                width: 15px;
+                height: 15px;
+              }
+              &::after {
+                background: #2D5E5E;
+                width: 11px;
+                height: 11px;
+                left: 2px;
+                display: none;
+              }
+        }
+        &:checked+label::after {
+            display: block;
+        }
+    }
     &__title {
         margin: 60px 0 50px;
         text-align: center;
@@ -75,45 +126,6 @@
         appearance: none;
         position: relative;
         background: url(../img/Arrow.svg) no-repeat right;
-        background-position-x: 329px;
-    }
-}
-.sign-up__input_check {
-    position: absolute;
-    box-sizing: border-box;
-    cursor: pointer;
-    display: block;
-    &+label {
-        position: relative;
-        display: inline-flex;
-        align-items: center;
-        user-select: none;
-        padding-left: 30px;
-        &::before, &::after {
-            content: '';
-            margin-top: 14px;
-            display: block;
-            position: absolute;
-            top: 0;
-            left: 0;
-            box-sizing: border-box;
-        }
-        &::before {
-            background: #FFF;
-            border: 1px solid #2D5E5E;
-            width: 15px;
-            height: 15px;
-          }
-        &::after {
-            background: #2D5E5E;
-            width: 11px;
-            height: 11px;
-            top: 2px;
-            left: 2px;
-            display: none;
-        }
-    }
-    &:checked+label::after {
-        display: block;
+        background-position-x: 270px;
     }
 }

@@ -6,6 +6,10 @@
 summary {
     list-style: none;
 }
+img {
+    max-width: 100%;
+    display: block;
+}
 .center {
     padding-left: calc(50vw - 555px);
     padding-right: calc(50vw - 555px);

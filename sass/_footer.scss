@@ -27,5 +27,8 @@
         font-weight: 500;
         line-height: 24px;
         color: #FFF;
+        @media screen and (max-width: 415px) {
+            line-height: 16px;   
+        }
     }
 }

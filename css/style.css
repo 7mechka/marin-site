@@ -979,6 +979,11 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   grid-row-start: auto;
 }
+@media screen and (max-width: 415px) {
+  .review__back {
+    display: none;
+  }
+}
 .review__next {
   background-image: url(../img/Arrow-next.svg);
   background-color: #FFF;
@@ -986,10 +991,21 @@ h1, h2, h3, h4, h5, h6 {
   width: 17px;
   height: 30px;
 }
+@media screen and (max-width: 415px) {
+  .review__next {
+    display: none;
+  }
+}
 .review__title {
   text-align: center;
   font-size: 48px;
   line-height: 72px;
+}
+@media screen and (max-width: 415px) {
+  .review__title {
+    font-size: 36px;
+    line-height: 43px;
+  }
 }
 .review__div {
   display: flex;
@@ -1011,6 +1027,12 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 43px;
   display: grid;
 }
+@media screen and (max-width: 415px) {
+  .review__comment-block {
+    width: auto;
+    margin: 0;
+  }
+}
 .review__photo {
   background-color: #ADDDDE;
   margin-right: 32px;
@@ -1026,6 +1048,12 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 300;
   line-height: 24px;
   text-align: center;
+}
+@media screen and (max-width: 415px) {
+  .review__text {
+    line-height: 18px;
+    font-size: 12px;
+  }
 }
 
 .articles {

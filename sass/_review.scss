@@ -11,6 +11,9 @@
         height: 30px;
         display: flex;
         grid-row-start: auto;
+        @media screen and (max-width: 415px) {
+            display: none;
+        }
     }
     &__next {
         background-image: url(../img/Arrow-next.svg);
@@ -18,11 +21,18 @@
         border: none;
         width: 17px;
         height: 30px;
+        @media screen and (max-width: 415px) {
+            display: none;
+        }
     }
     &__title {
         text-align: center;
         font-size: 48px;
         line-height: 72px;
+        @media screen and (max-width: 415px) {
+            font-size: 36px;
+            line-height: 43px;
+        }
     }
     &__div {
         display: flex;
@@ -43,6 +53,10 @@
         width: 600px;
         margin: 0 43px;
         display: grid;
+        @media screen and (max-width: 415px) {
+            width: auto;
+            margin: 0;
+        }
     }
     &__photo {
         background-color: #ADDDDE;
@@ -59,6 +73,9 @@
         font-weight: 300;
         line-height: 24px;
         text-align: center;
-
+        @media screen and (max-width: 415px) {
+            line-height: 18px;
+            font-size: 12px;
+        }
     }
 }

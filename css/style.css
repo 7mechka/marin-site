@@ -1254,6 +1254,12 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 44px;
   }
 }
+@media screen and (max-width: 415px) {
+  .discount__title {
+    line-height: 42px;
+    font-size: 36px;
+  }
+}
 .discount__check-block {
   display: flex;
   justify-content: center;
@@ -1265,6 +1271,11 @@ h1, h2, h3, h4, h5, h6 {
     flex-direction: column;
     align-items: center;
     gap: 20px;
+  }
+}
+@media screen and (max-width: 415px) {
+  .discount__input-block {
+    align-items: normal;
   }
 }
 .discount__input {
@@ -1279,6 +1290,11 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 24px;
   padding-left: 20px;
   background-color: #FFF;
+}
+@media screen and (max-width: 415px) {
+  .discount__input {
+    width: auto;
+  }
 }
 .discount__form-check {
   position: absolute;
@@ -1297,6 +1313,11 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 500;
   line-height: 20px;
   padding-left: 30px;
+}
+@media screen and (max-width: 415px) {
+  .discount__form-check + label {
+    font-size: 11px;
+  }
 }
 .discount__form-check + label::before, .discount__form-check + label::after {
   content: "";

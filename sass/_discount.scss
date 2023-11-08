@@ -7,6 +7,10 @@
         @media screen and (max-width: 810px) {
             font-size: 44px;
         }
+        @media screen and (max-width: 415px) {
+            line-height: 42px;
+            font-size: 36px;
+        }
     }
     &__check-block {
         display: flex;
@@ -19,6 +23,9 @@
             flex-direction: column;
             align-items: center;
             gap: 20px;
+        }
+        @media screen and (max-width: 415px) {
+            align-items: normal;
         }
     }
     &__input {
@@ -33,6 +40,9 @@
         line-height: 24px;
         padding-left: 20px;
         background-color: #FFF;
+        @media screen and (max-width: 415px) {
+            width: auto;
+        }
     }
 
     &__form-check {
@@ -51,6 +61,9 @@
             font-weight: 500;
             line-height: 20px;
             padding-left: 30px;
+            @media screen and (max-width: 415px) {
+                font-size: 11px;
+            }
             &::before, &::after {
                 content: '';
                 margin-top: 2px;

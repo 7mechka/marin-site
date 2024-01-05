@@ -4,23 +4,37 @@
     gap: 50px;
     margin-bottom: 63px;
     &__back {
-        background-image: url(../img/Arrow-back.svg);
+        // background-image: url(../img/Arrow-back.svg);
         background-color: #FFF;
         border: none;
         width: 17px;
         height: 30px;
         display: flex;
         grid-row-start: auto;
+        cursor: pointer;
+        &:hover &-arrow {
+            fill: #5ab2b6;
+        }
+        &:active &-arrow {
+            fill: #3e969c;
+        }
         @media screen and (max-width: 415px) {
             display: none;
         }
     }
     &__next {
-        background-image: url(../img/Arrow-next.svg);
+        // background-image: url(../img/Arrow-next.svg);
         background-color: #FFF;
         border: none;
         width: 17px;
         height: 30px;
+        cursor: pointer;
+        &:hover &-arrow {
+            fill: #5ab2b6;
+        }
+        &:active &-arrow {
+            fill: #3e969c;
+        }
         @media screen and (max-width: 415px) {
             display: none;
         }
@@ -79,3 +93,8 @@
         }
     }
 }
+// #review__back-arrow {
+//     &:hover {
+//         fill: #8fcfd1;
+//     }
+// }

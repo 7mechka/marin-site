@@ -976,13 +976,19 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 63px;
 }
 .review__back {
-  background-image: url(../img/Arrow-back.svg);
   background-color: #FFF;
   border: none;
   width: 17px;
   height: 30px;
   display: flex;
   grid-row-start: auto;
+  cursor: pointer;
+}
+.review__back:hover .review__back-arrow {
+  fill: #5ab2b6;
+}
+.review__back:active .review__back-arrow {
+  fill: #3e969c;
 }
 @media screen and (max-width: 415px) {
   .review__back {
@@ -990,11 +996,17 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 .review__next {
-  background-image: url(../img/Arrow-next.svg);
   background-color: #FFF;
   border: none;
   width: 17px;
   height: 30px;
+  cursor: pointer;
+}
+.review__next:hover .review__next-arrow {
+  fill: #5ab2b6;
+}
+.review__next:active .review__next-arrow {
+  fill: #3e969c;
 }
 @media screen and (max-width: 415px) {
   .review__next {

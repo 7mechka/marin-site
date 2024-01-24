@@ -1,7 +1,7 @@
 let counterArray = document.querySelectorAll('.animation')
 let isAnimation = false
 
-document.addEventListener('scroll', () => {
+let scrollListener = document.addEventListener('scroll', () => {
     scrollDetect(counterArray)
 })
 

@@ -1,11 +1,13 @@
 let counterArray = document.querySelectorAll('.animation')
 let isAnimation = false
 
-document.addEventListener('scroll', scrollDetect(counterArray))
+document.addEventListener('scroll', () => {
+    scrollDetect(counterArray)
+})
 
 function scrollDetect(obj) {
     if (typeof(obj) === 'string') {
-        if (obj.getBoundingClientRect().top < window.innerHeight * .75 && !isAnimation) {
+        if (obj.getBoundingClientRect().top < window.innerHeight * .75 && (isAnimation === false)) {
             isAnimation = !isAnimation
             if (obj.innerText >= 100) {
                 counterAnimation(obj, obj.innerText, 20)
@@ -16,7 +18,7 @@ function scrollDetect(obj) {
         }
     }
     else  {
-        if (obj[0].getBoundingClientRect().top < window.innerHeight * .75 && !isAnimation) {
+        if (obj[0].getBoundingClientRect().top < window.innerHeight * .75 && (isAnimation === false)) {
             isAnimation = !isAnimation
             obj.forEach((item) => {
                 if (item.innerText >= 100) {
